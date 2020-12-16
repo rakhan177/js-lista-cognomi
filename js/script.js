@@ -1,6 +1,6 @@
 console.log('ciao');
 // creo variabili
-var benvenuto = document.getElementById('benvenuto');
+
 var lista_cognomi = document.getElementById('lista_cognomi');
 
 // cognome utente
@@ -20,6 +20,10 @@ solo la prima cifra/numero; mentre in caso di lettere la maiuscola avrà la prec
 cognomiVari.sort();
 console.log(cognomiVari);
 // creo ciclo for per inserimento lista in HTML
-for (var i = 0; i < cognomiVari.lenght; i++){
+for (var i = 0; i < cognomiVari.length; i++){
   lista_cognomi.innerHTML += '<li>' + cognomiVari[i] + '</li>';
 }
+// creo una variabile e assegno indexOf a cognomiVari per indicizzare cognomeUtente
+var posizioneUtente = cognomiVari.indexOf(cognomeUtente);
+console.log(posizioneUtente);
+lista_cognomi.innerHTML += '<div>' + 'La sua posizione è la n. ' + (posizioneUtente + 1) + '</div>';

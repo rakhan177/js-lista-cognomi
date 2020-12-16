@@ -9,3 +9,7 @@ console.log(cognomeUtente);
 // creo array con cognomi vari
 var cognomiVari = ['Busi', 'Doria', 'Orietti', 'Zampelli', 'Raffelli', 'Secchi'];
 console.log(cognomiVari);
+/*con push aggiungo uno o + elementi alla fine di un arry,quindi:
+nome_array.push(variabile/'stringa')*/
+cognomiVari.push(cognomeUtente);
+console.log(cognomiVari);
